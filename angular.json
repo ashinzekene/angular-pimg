@@ -116,6 +116,46 @@
           }
         }
       }
+    },
+    "angular-pimg": {
+      "root": "projects/angular-pimg",
+      "sourceRoot": "projects/angular-pimg/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-pimg/tsconfig.lib.json",
+            "project": "projects/angular-pimg/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/angular-pimg/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-pimg/src/test.ts",
+            "tsConfig": "projects/angular-pimg/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-pimg/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-pimg/tsconfig.lib.json",
+              "projects/angular-pimg/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-pimg-lib"
