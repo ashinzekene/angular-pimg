@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { AngularPimgService } from '../public_api';
 
 @Component({
@@ -7,7 +8,7 @@ import { AngularPimgService } from '../public_api';
   styles: []
 })
 export class AngularPimgComponent implements OnInit {
-  @Input() dataSaver: boolean | { wrapperClassName: string, buttonClassName: string }
+  @Input() dataSaver: { wrapperClassName: string, buttonClassName: string } & false
   @Input() src: string
   @Input() fetchOnDemand: boolean
   @Input() placeholder: string
@@ -15,12 +16,14 @@ export class AngularPimgComponent implements OnInit {
   @Input() class: string
   @Output() onFetched: EventEmitter<null> = new EventEmitter()
   @Output() onError: EventEmitter<any> = new EventEmitter()
-  blob: string
+  wrapperClassName: string = ''
+  buttonClassName: string = ''
+  blob: SafeUrl
   delayed: boolean
   loading: boolean
   classes: string
 
-  constructor(private options: AngularPimgService) {
+  constructor(private domSanitizer: DomSanitizer, private options: AngularPimgService) {
     // Set the default configuration options if option is not present
     if (this.isUndefined(this.fetchOnDemand)) {
       this.fetchOnDemand = this.options.fetchOnDemand
@@ -29,10 +32,12 @@ export class AngularPimgComponent implements OnInit {
       this.placeholderClassName = this.options.placeholderClassName
     }
     if (this.isUndefined(this.dataSaver)) {
-      this.dataSaver = this.options.dataSaver
+      // this.dataSaver = this.options.dataSaver
     }
     if (this.isObject(this.dataSaver)) {
       this.setFetchOnDemand()
+      // set buttonClassName and wrapperClassName
+      this.buttonClassName = this.dataSaver.wrapperClassName
     }
 
     // Setting up
@@ -68,7 +73,7 @@ export class AngularPimgComponent implements OnInit {
     fetch(this.src)
       .then(res => res.blob())
       .then(res => {
-        this.blob = URL.createObjectURL(res)
+        this.blob = this.domSanitizer.bypassSecurityTrustUrl(URL.createObjectURL(res))
         this.loading = false
         this.delayed = false
         this.onFetched.emit()

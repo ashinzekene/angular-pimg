@@ -4,9 +4,7 @@
     Load image
   </button>
 </div>
-<template #loadingContent>
+<ng-template #loadingContent>
   <img [ngClass]="classes" [src]="placeholder" />
-</template>
-<template *ngIf="!dataSaver || !loading">
-  <img [ngClass]="classes" [src]="blob" />
-</template>
+</ng-template>
+<img *ngIf="!dataSaver || !loading" [ngClass]="classes" [src]="blob" />

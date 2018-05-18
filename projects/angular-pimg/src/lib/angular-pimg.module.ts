@@ -17,7 +17,7 @@ export class AngularPimgModule {
       throw new Error("The Angular Pimg Module is already loaded. Import it only in your AppModule")
     }
   }
-  static forRoot(options?: AngularPimgOptions): ModuleWithProviders {
+  static forRoot(options?: Partial<AngularPimgOptions>): ModuleWithProviders {
     return {
       ngModule: AngularPimgModule,
       providers: [
