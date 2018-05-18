@@ -1,0 +1,12 @@
+<div *ngIf="dataSaver && loading; else loadingContent" [ngClass]="dataSaver.wrapperClassName">
+  <img [ngClass]="classes" [src]="placeholder" />
+  <button [ngClass]="dataSaver.buttonClassName" (click)="fetchImage()">
+    Load image
+  </button>
+</div>
+<template #loadingContent>
+  <img [ngClass]="classes" [src]="placeholder" />
+</template>
+<template *ngIf="!dataSaver || !loading">
+  <img [ngClass]="classes" [src]="blob" />
+</template>

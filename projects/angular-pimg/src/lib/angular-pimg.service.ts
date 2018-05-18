@@ -6,10 +6,10 @@ import { AngularPimgOptions } from './config-options';
   providedIn: 'root'
 })
 export class AngularPimgService {
-  public _className: string = '';
-  public _placeholderClassName: string = 'pimg__placeholder';
-  public _fetchOnDemand: boolean = false;
-  public _dataSaver: boolean | { wrapperClassName: string, buttonClassName: string } = {
+  private _className: string = '';
+  private _placeholderClassName: string = 'pimg__placeholder';
+  private _fetchOnDemand: boolean = false;
+  private _dataSaver: boolean | { wrapperClassName: string, buttonClassName: string } = {
     wrapperClassName: 'pimg_wrapper',
     buttonClassName: 'pimg_btn'
   }
@@ -17,19 +17,27 @@ export class AngularPimgService {
     if (config) this.setConfig(config)
   }
 
-  get className() {
+  get wrapperClassName(): string {
+    return typeof this._dataSaver === 'object' ? this._dataSaver.wrapperClassName : ''
+  }
+  
+  get buttonClassName(): string {
+    return typeof this._dataSaver === 'object' ? this._dataSaver.buttonClassName : ''
+  }
+
+  get className(): string {
     return this._className
   }
 
-  get placeholderClassName() {
+  get placeholderClassName(): string {
     return this._placeholderClassName
   }
 
-  get dataSaver() {
+  get dataSaver(): boolean | { wrapperClassName: string, buttonClassName: string } {
     return this._dataSaver
   }
 
-  get fetchOnDemand() {
+  get fetchOnDemand(): boolean {
     return this._fetchOnDemand
   }
 
