@@ -1,6 +1,6 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { AngularPimgService } from './angular-pimg.service';
+import { AngularPimgService } from '../public_api';
 
 describe('AngularPimgService', () => {
   beforeEach(() => {

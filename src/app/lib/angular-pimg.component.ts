@@ -13,8 +13,8 @@ export class AngularPimgComponent implements OnChanges {
   @Input() src: string
   @Input() fetchOnDemand: boolean
   @Input() placeholder: string
-  @Input() placeholderClassName: string = ''
-  @Input() class: string = ''
+  @Input() placeholderClassName: string
+  @Input() class: string
   @Input() style: any = { display: 'block' }
   @Output() onFetched: EventEmitter<null> = new EventEmitter()
   @Output() onError: EventEmitter<any> = new EventEmitter()
@@ -24,6 +24,7 @@ export class AngularPimgComponent implements OnChanges {
   delayed: boolean
   loading: boolean
   classes: string
+  private isIntersecting: boolean = false
 
   constructor(private el: ElementRef, private domSanitizer: DomSanitizer, private options: AngularPimgService) {
     this.insertInput()
@@ -33,8 +34,9 @@ export class AngularPimgComponent implements OnChanges {
   setFetchOnDemand() {
     let observer = new IntersectionObserver(entries => {
       let image = entries[0]
-      if (image.isIntersecting) {
+      if (image.isIntersecting && !this.isIntersecting) {
         this.fetchImage()
+        this.isIntersecting = true
         console.log("Called by intersection API")
         this.delayed = false
         observer.disconnect()
@@ -50,6 +52,7 @@ export class AngularPimgComponent implements OnChanges {
         console.log(res)
         this.blob = this.domSanitizer.bypassSecurityTrustUrl(URL.createObjectURL(res))
         this.loading = false
+        this.isIntersecting = false
         this.delayed = false
         this.onFetched.emit()
       })
@@ -77,7 +80,7 @@ export class AngularPimgComponent implements OnChanges {
 
   insertInput(values?) {
     if (values) {
-      // Set the default configuration options if option is not present
+      // Called by simple changes; Set the default configuration options if option is not present
       if (this.isUndefined(values.fetchOnDemand)) {
         values.fetchOnDemand = this.options.fetchOnDemand
       }
@@ -89,15 +92,22 @@ export class AngularPimgComponent implements OnChanges {
       }
       if (this.isObject(values.dataSaver)) {
         // set buttonClassName and wrapperClassName
-        this.buttonClassName = values.dataSaver.wrapperClassName
+        this.buttonClassName = this.dataSaver.buttonClassName
+        this.wrapperClassName = this.dataSaver.wrapperClassName
+      } else {
+        this.buttonClassName = this.options.buttonClassName
+        this.wrapperClassName = this.options.wrapperClassName
       }
     } else {
-      // Set the default configuration options if option is not present
+      // Called on initialization; Set the default configuration options if option is not present
       if (this.isUndefined(this.fetchOnDemand)) {
-        console.log("FOD is undefined, setting as", this.options.fetchOnDemand)
         this.fetchOnDemand = this.options.fetchOnDemand
       }
       if (this.isUndefined(this.placeholderClassName)) {
+        console.log('Placeholder class undefined', 
+        this.options.buttonClassName,
+        this.options,
+        this.options.placeholderClassName)
         this.placeholderClassName = this.options.placeholderClassName
       }
       if (this.isUndefined(this.dataSaver)) {
@@ -107,6 +117,9 @@ export class AngularPimgComponent implements OnChanges {
         // set buttonClassName and wrapperClassName
         this.buttonClassName = this.dataSaver.buttonClassName
         this.wrapperClassName = this.dataSaver.wrapperClassName
+      } else {
+        this.buttonClassName = this.options.buttonClassName
+        this.wrapperClassName = this.options.wrapperClassName
       }
     }
   }
@@ -114,18 +127,16 @@ export class AngularPimgComponent implements OnChanges {
   setUp() {
     if (this.dataSaver) {
       this.delayed = true
-    }
-    if (this.fetchOnDemand) {
+    } else if (this.fetchOnDemand) {
       this.loading = true
       this.setFetchOnDemand()
     } else {
       this.fetchImage()
-      console.log("Called cos of config")
+      console.log("Fetching image, due to config", this.dataSaver)
     }
     if (this.src && this.src.includes('cloudinary')) {
       this.placeholder =
         this.placeholder || this.src.replace('/upload/', '/upload/c_thumb,w_30/')
-
     }
     this.classes = `${this.class} ${this.placeholderClassName}`
   }

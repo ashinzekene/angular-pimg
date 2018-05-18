@@ -1,8 +1,9 @@
 import { NgModule, ModuleWithProviders, Optional, SkipSelf } from '@angular/core';
 import { AngularPimgComponent } from './angular-pimg.component';
-import { AngularPimgService } from './angular-pimg.service';
 import { AngularPimgOptions } from './config-options';
 import { CommonModule } from '@angular/common';
+import { AngularPimgService } from '../public_api';
+import { config } from 'rxjs';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ export class AngularPimgModule {
     return {
       ngModule: AngularPimgModule,
       providers: [
-        { provide: AngularPimgService, useValue: options }
+         { provide: AngularPimgService, useFactory: (options: Partial<AngularPimgOptions>) => new AngularPimgService(options), deps: [ options ]}
       ]
     }
   }

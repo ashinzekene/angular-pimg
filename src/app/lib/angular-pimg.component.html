@@ -1,4 +1,4 @@
-<div *ngIf="((dataSaver || getDataSaver()) && loading) || delayed; else loadingContent">
+<div *ngIf="(dataSaver && loading) || delayed; else loadingContent">
   <img [ngClass]="classes" [ngStyle]="style" [src]="placeholder" />
   <button [ngClass]="buttonClassName" (click)="fetchImage()">
     Load image
