@@ -7,4 +7,4 @@
 <ng-template #loadingContent>
   <img [ngClass]="classes" [src]="placeholder" />
 </ng-template>
-<img *ngIf="!dataSaver || !loading" [ngClass]="classes" [src]="blob" />
+<img *ngIf="!dataSaver &&  !loading && blob" [ngClass]="classes" [src]="blob" />
