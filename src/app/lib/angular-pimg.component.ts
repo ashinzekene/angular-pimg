@@ -1,14 +1,13 @@
-import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-import { AngularPimgService } from '../public_api';
-import { AngularPimgOptions } from './config-options';
+import { AngularPimgService } from './angular-pimg.service';
 
 @Component({
   selector: 'angular-pimg',
   templateUrl: 'angular-pimg.component.html',
   styles: []
 })
-export class AngularPimgComponent implements OnInit, OnChanges {
+export class AngularPimgComponent implements OnInit {
   @Input() dataSaver: { wrapperClassName: string, buttonClassName: string } & false
   @Input() src: string
   @Input() fetchOnDemand: boolean
@@ -70,39 +69,21 @@ export class AngularPimgComponent implements OnInit, OnChanges {
 
   }
 
-  insertInput(values?: Partial<AngularPimgOptions>) {
-    if (values) {
-      // Set the default configuration options if option is not present
-      if (this.isUndefined(values.fetchOnDemand)) {
-        values.fetchOnDemand = this.options.fetchOnDemand
-      }
-      if (this.isUndefined(values.placeholderClassName)) {
-        values.placeholderClassName = this.options.placeholderClassName
-      }
-      if (this.isUndefined(values.dataSaver)) {
-        // values.dataSaver = values.options.dataSaver
-      }
-      if (this.isObject(values.dataSaver)) {
-        this.setFetchOnDemand()
-        // set buttonClassName and wrapperClassName
-        this.buttonClassName = values.dataSaver.wrapperClassName
-      }
-    } else {
-      // Set the default configuration options if option is not present
-      if (this.isUndefined(this.fetchOnDemand)) {
-        this.fetchOnDemand = this.options.fetchOnDemand
-      }
-      if (this.isUndefined(this.placeholderClassName)) {
-        this.placeholderClassName = this.options.placeholderClassName
-      }
-      if (this.isUndefined(this.dataSaver)) {
-        // this.dataSaver = this.options.dataSaver
-      }
-      if (this.isObject(this.dataSaver)) {
-        this.setFetchOnDemand()
-        // set buttonClassName and wrapperClassName
-        this.buttonClassName = this.dataSaver.wrapperClassName
-      }
+  insertInput(values?) {
+    // Set the default configuration options if option is not present
+    if (this.isUndefined(this.fetchOnDemand)) {
+      this.fetchOnDemand = this.options.fetchOnDemand
+    }
+    if (this.isUndefined(this.placeholderClassName)) {
+      this.placeholderClassName = this.options.placeholderClassName
+    }
+    if (this.isUndefined(this.dataSaver)) {
+      // this.dataSaver = this.options.dataSaver
+    }
+    if (this.isObject(this.dataSaver)) {
+      this.setFetchOnDemand()
+      // set buttonClassName and wrapperClassName
+      this.buttonClassName = this.dataSaver.wrapperClassName
     }
   }
 
@@ -124,8 +105,6 @@ export class AngularPimgComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.insertInput()
-    this.setUp()
   }
 
   isObject = x => typeof x === 'object'

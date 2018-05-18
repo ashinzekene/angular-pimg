@@ -1,6 +1,12 @@
 <h1>angular pimg</h1>
 
+<div class="row">
+  <div class="form-group col-md-7 col-lg-5">
+    <input type="text" [(ngModel)]="srcSha" class="form-control">
+    <button class="btn btn-secondary" (click)="changeSrc()">Oya Load am</button>
+  </div>
+</div>
 <angular-pimg
-src="{{'https://cdn-images-1.medium.com/max/800/1*9vbVT2n-mI_ls0wVIdFMLQ.jpeg' }}"
+[src]="src"
 >
 </angular-pimg>

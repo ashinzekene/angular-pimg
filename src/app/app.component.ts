@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  srcSha = ''
+  src = 'https://cdn-images-1.medium.com/max/800/0*RuekjsfQg15Gs3KU.jpg'
+
+  changeSrc() {
+    this.src = this.srcSha
+  }
 }

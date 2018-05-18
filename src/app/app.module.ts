@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularPimgModule } from 'angular-pimg';
+import { FormsModule } from '@angular/forms';
+import { AngularPimgModule } from './lib/angular-pimg.module';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AngularPimgModule.forRoot({ dataSaver: true })
+    FormsModule,
+    AngularPimgModule.forRoot({ dataSaver: { wrapperClassName: "anything", buttonClassName: "btn btn-primary" } })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>testing blob</title>
+</head>
+<body>
+  <h1>Testing blobb</h1>
+  <img src="" alt="">
+  <input type="text">
+  <button>Fetch image</button>
+  <script>
+    document.querySelector("button").onclick = function() {
+      fetch(document.querySelector("input").value)
+        .then(res => res.blob())
+        .then(blob => document.querySelector("img").src = URL.createObjectURL(blob))
+        .catch(alert)
+    }
+  </script>
+</body>
+</html>
