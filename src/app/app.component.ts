@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   srcSha = ''
-  src = 'https://cdn-images-1.medium.com/max/800/0*RuekjsfQg15Gs3KU.jpg'
+  src = 'https://res.cloudinary.com/stackpie/image/upload/c_thumb/v1514275012/assassins_creed_revelations_concept_art-wallpaper-1366x768_qdl9vo.jpg'
 
   changeSrc() {
     this.src = this.srcSha
