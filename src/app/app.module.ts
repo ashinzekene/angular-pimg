@@ -12,7 +12,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AngularPimgModule.forRoot({ dataSaver: { wrapperClassName: "anything", buttonClassName: "btn btn-primary" } })
+    AngularPimgModule.forRoot({
+      dataSaver: { wrapperClassName: "anything", buttonClassName: "btn btn-primary" },
+      fetchOnDemand: true,
+      className: 'img'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

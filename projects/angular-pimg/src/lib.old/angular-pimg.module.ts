@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders, Optional, SkipSelf } from '@angular/core';
 import { AngularPimgComponent } from './angular-pimg.component';
-import { AngularPimgService } from './angular-pimg.service';
+import { AngularPimgService } from '../public_api';
 import { AngularPimgOptions } from './config-options';
 import { CommonModule } from '@angular/common';
 

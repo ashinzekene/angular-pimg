@@ -1,5 +1,5 @@
 import { Directive, Input } from '@angular/core';
-import { AngularPimgService } from './angular-pimg.service';
+import { AngularPimgService } from '../public_api';
 
 @Directive({ selector: '[angular-pimg]' })
 export class AngularPimgDirective {
