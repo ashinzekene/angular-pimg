@@ -72,10 +72,6 @@ export class AngularPimgComponent implements OnChanges {
     changes.style ? newValues.style = changes.style.currentValue : null
     this.insertInput(newValues)
     this.setUp()
-    // this.checkValues(changes.categoryId.currentValue);
-    // You can also use categoryId.previousValue and 
-    // categoryId.firstChange for comparing old and new values
-
   }
 
   insertInput(values?) {

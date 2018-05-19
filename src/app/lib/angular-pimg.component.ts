@@ -14,7 +14,7 @@ export class AngularPimgComponent implements OnChanges {
   @Input() fetchOnDemand: boolean
   @Input() placeholder: string
   @Input() placeholderClassName: string
-  @Input() class: string
+  @Input() className: string
   @Input() style: any = { display: 'block' }
   @Output() onFetched: EventEmitter<null> = new EventEmitter()
   @Output() onError: EventEmitter<any> = new EventEmitter()
@@ -72,10 +72,6 @@ export class AngularPimgComponent implements OnChanges {
     changes.style ? newValues.style = changes.style.currentValue : null
     this.insertInput(newValues)
     this.setUp()
-    // this.checkValues(changes.categoryId.currentValue);
-    // You can also use categoryId.previousValue and 
-    // categoryId.firstChange for comparing old and new values
-
   }
 
   insertInput(values?) {
@@ -86,6 +82,9 @@ export class AngularPimgComponent implements OnChanges {
       }
       if (this.isUndefined(values.placeholderClassName)) {
         values.placeholderClassName = this.options.placeholderClassName
+      }
+      if (this.isUndefined(values.className)) {
+        values.className = this.options.className
       }
       if (this.isUndefined(values.dataSaver)) {
         // values.dataSaver = values.options.dataSaver
@@ -104,14 +103,13 @@ export class AngularPimgComponent implements OnChanges {
         this.fetchOnDemand = this.options.fetchOnDemand
       }
       if (this.isUndefined(this.placeholderClassName)) {
-        console.log('Placeholder class undefined', 
-        this.options.buttonClassName,
-        this.options,
-        this.options.placeholderClassName)
         this.placeholderClassName = this.options.placeholderClassName
       }
       if (this.isUndefined(this.dataSaver)) {
         this.dataSaver = this.options.dataSaver
+      }
+      if (this.isUndefined(this.className)) {
+        this.className = this.options.className
       }
       if (this.isObject(this.dataSaver)) {
         // set buttonClassName and wrapperClassName
@@ -138,7 +136,7 @@ export class AngularPimgComponent implements OnChanges {
       this.placeholder =
         this.placeholder || this.src.replace('/upload/', '/upload/c_thumb,w_30/')
     }
-    this.classes = `${this.class} ${this.placeholderClassName}`
+    this.classes = `${this.className} ${this.placeholderClassName}`
   }
   isObject = x => typeof x === 'object'
   isUndefined = x => typeof x === 'undefined'

@@ -1,4 +1,4 @@
-import { Injectable, Optional } from '@angular/core';
+import { Injectable, Optional, Inject } from '@angular/core';
 import { AngularWaitBarrier } from 'blocking-proxy/built/lib/angular_wait_barrier';
 import { AngularPimgOptions } from './config-options';
 
@@ -13,8 +13,8 @@ export class AngularPimgService {
   private _buttonClassName: string = 'pimg_btn'
   private _wrapperClassName: string = 'pimg_wrapper'
 
-  constructor(@Optional() config: Partial<AngularPimgOptions>) {
-    if (config) this.setConfig(config)
+  constructor(@Optional() @Inject('Options') options: Partial<AngularPimgOptions>) {
+    if (options) this.setConfig(options)
   }
 
   get wrapperClassName(): string {
@@ -42,7 +42,6 @@ export class AngularPimgService {
   }
 
   setConfig({ className, dataSaver, fetchOnDemand, placeholderClassName }: Partial<AngularPimgOptions>) {
-    console.log("SETTING CONFIG")
     this._className = typeof className !== "undefined" ? className : this.className
     this._fetchOnDemand = typeof fetchOnDemand !== "undefined" ? fetchOnDemand : this.fetchOnDemand
     this._placeholderClassName = typeof placeholderClassName !== "undefined" ? placeholderClassName : this.placeholderClassName
