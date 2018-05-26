@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  srcSha = ''
-  src = 'https://res.cloudinary.com/stackpie/image/upload/c_thumb/v1514275012/assassins_creed_revelations_concept_art-wallpaper-1366x768_qdl9vo.jpg'
+  srcSha = '';
+  src = 'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,h_536,q_25,w_1056/v1511573958/frontstack/abuja.jpg';
 
   changeSrc() {
-    this.src = this.srcSha
+    this.src = this.srcSha;
   }
 }

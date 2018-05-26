@@ -6,7 +6,24 @@ import { AngularPimgOptions } from './config-options';
 @Component({
   selector: 'angular-pimg',
   templateUrl: 'angular-pimg.component.html',
-  styles: []
+  styles: [`
+    div {
+      position: relative;
+    }
+    img {
+      width: 300px;
+    }
+    button {
+      position: absolute;
+      border: 1px solid white;
+      border-radius: 12px;
+      left: 0;
+      margin-left: 75px;
+      bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+  `]
 })
 export class AngularPimgComponent implements OnChanges {
   @Input() dataSaver: any;
