@@ -1,10 +1,9 @@
-export type AngularPimgOptions = {
-  className: string
-  fetchOnDemand: boolean
-  placeholderClassName: string
-  dataSaver: false | { wrapperClassName: string, buttonClassName: string } 
+export interface AngularPimgOptions {
+  className: string;
+  fetchOnDemand: boolean;
+  placeholderClassName: string;
+  dataSaver: false | { wrapperClassName: string, buttonClassName: string };
 }
-
 
 export const defaultOptions = {
   placeholderClassName: 'pimg__placeholder',
@@ -12,4 +11,4 @@ export const defaultOptions = {
   dataSaver: false,
   buttonClassName: 'pimg_btn',
   wrapperClassName: 'pimg_wrapper',
-}
+};

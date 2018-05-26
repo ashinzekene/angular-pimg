@@ -6,24 +6,7 @@ import { AngularPimgOptions } from './config-options';
 @Component({
   selector: 'angular-pimg',
   templateUrl: 'angular-pimg.component.html',
-  styles: [`
-    div {
-      position: relative;
-    }
-    img {
-      width: 300px;
-    }
-    button {
-      position: absolute;
-      border: 1px solid white;
-      border-radius: 12px;
-      left: 0;
-      margin-left: 75px;
-      bottom: 10px;
-      background-color: rgba(0, 0, 0, 0.2);
-      color: white;
-    }
-  `]
+  styles: []
 })
 export class AngularPimgComponent implements OnChanges {
   @Input() dataSaver: any;
@@ -82,7 +65,7 @@ export class AngularPimgComponent implements OnChanges {
     const newValues: any = {};
     const props = ['src', 'fetchOnDemand', 'placeholder', 'placeholderClassName', 'className', 'style'];
     for (const prop in changes) {
-      if (props.includes(prop) && !this.isUndefined(changes[prop].currentValue)) {
+      if (props.findIndex(val => val === prop) > 0 && !this.isUndefined(changes[prop].currentValue)) {
         console.log(`${prop} is not undefined. It has changed`);
         this[prop] = changes[prop].currentValue;
       } else {

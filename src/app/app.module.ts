@@ -13,9 +13,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     AngularPimgModule.forRoot({
-      dataSaver: true,
       fetchOnDemand: true,
       className: 'img',
+      dataSaver: { wrapperClassName: 'wrapper', buttonClassName: 'my-btn' }
     })
   ],
   providers: [],

@@ -13,7 +13,7 @@ export class AngularPimgService {
   private _buttonClassName = 'pimg_btn';
   private _wrapperClassName = 'pimg_wrapper';
 
-  constructor(@Optional() @Inject('Options') options: Partial<AngularPimgOptions>) {
+  constructor(@Optional() @Inject('Options') options: AngularPimgOptions) {
     if (options) {
       this.setConfig(options);
     }

@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 export class AngularPimgModule {
   constructor(@Optional() @SkipSelf() parentModule: AngularPimgModule) {
     if (parentModule) {
-      throw new Error("The Angular Pimg Module is already loaded. Import it only in your AppModule")
+      throw new Error('The Angular Pimg Module is already loaded. Import it only in your AppModule');
     }
   }
   static forRoot(options?: Partial<AngularPimgOptions>): ModuleWithProviders {
@@ -24,6 +24,6 @@ export class AngularPimgModule {
         AngularPimgService,
         { provide: 'Options', useValue: options }
       ]
-    }
+    };
   }
 }

@@ -65,7 +65,7 @@ export class AngularPimgComponent implements OnChanges {
     const newValues: any = {};
     const props = ['src', 'fetchOnDemand', 'placeholder', 'placeholderClassName', 'className', 'style'];
     for (const prop in changes) {
-      if (props.includes(prop) && !this.isUndefined(changes[prop].currentValue)) {
+      if (props.findIndex(val => val === prop) > 0 && !this.isUndefined(changes[prop].currentValue)) {
         console.log(`${prop} is not undefined. It has changed`);
         this[prop] = changes[prop].currentValue;
       } else {
