@@ -43,6 +43,7 @@ export class AngularPimgService {
   }
 
   setConfig({ className, dataSaver, fetchOnDemand, placeholderClassName }: Partial<AngularPimgOptions>) {
+    console.log('setting config');
     this._className = typeof className !== 'undefined' ? className : this.className;
     this._fetchOnDemand = typeof fetchOnDemand !== 'undefined' ? fetchOnDemand : this.fetchOnDemand;
     this._placeholderClassName = typeof placeholderClassName !== 'undefined' ? placeholderClassName : this.placeholderClassName;
@@ -52,9 +53,8 @@ export class AngularPimgService {
     if (typeof dataSaver === 'object') {
       this._buttonClassName = dataSaver.buttonClassName;
       this._wrapperClassName = dataSaver.wrapperClassName;
-    } else {
-      this._dataSaver = true; // dataSaver is true
     }
+    this._dataSaver = true; // dataSaver is true
   }
 
 }

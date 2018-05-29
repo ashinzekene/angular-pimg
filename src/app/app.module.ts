@@ -6,7 +6,6 @@ import { AngularPimgModule } from 'angular-pimg';
 import { AppComponent } from './app.component';
 
 const pimgOptions = {
-  fetchOnDemand: true,
   className: 'img',
   dataSaver: { wrapperClassName: 'wrapper', buttonClassName: 'my-btn' }
 };

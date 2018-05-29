@@ -7,7 +7,7 @@ export interface AngularPimgOptions {
 
 export const defaultOptions = {
   placeholderClassName: 'pimg__placeholder',
-  fetchOnDemand: true,
+  fetchOnDemand: false,
   dataSaver: false,
   buttonClassName: 'pimg_btn',
   wrapperClassName: 'pimg_wrapper',

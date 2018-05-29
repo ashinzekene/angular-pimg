@@ -37,7 +37,6 @@ export class AngularPimgComponent implements OnChanges {
       if (image.isIntersecting && !this.isIntersecting) {
         this.fetchImage();
         this.isIntersecting = true;
-        console.log('Called by intersection API');
         this.delayed = false;
         observer.disconnect();
       }
@@ -49,7 +48,6 @@ export class AngularPimgComponent implements OnChanges {
     fetch(this.src)
       .then(res => res.blob())
       .then(res => {
-        console.log(res);
         this.blob = this.domSanitizer.bypassSecurityTrustUrl(URL.createObjectURL(res));
         this.loading = false;
         this.isIntersecting = false;
@@ -66,7 +64,6 @@ export class AngularPimgComponent implements OnChanges {
     const props = ['src', 'fetchOnDemand', 'placeholder', 'placeholderClassName', 'className', 'style'];
     for (const prop in changes) {
       if (props.findIndex(val => val === prop) > 0 && !this.isUndefined(changes[prop].currentValue)) {
-        console.log(`${prop} is not undefined. It has changed`);
         this[prop] = changes[prop].currentValue;
       } else {
         if (prop === 'dataSaver' && this.isObject(changes[prop])) {
@@ -87,7 +84,6 @@ export class AngularPimgComponent implements OnChanges {
 
   insertInput() {
     // Called on initialization; Set the default configuration options if option is not present
-    console.log('Config options', this.options);
     if (this.isUndefined(this.fetchOnDemand)) {
       this.fetchOnDemand = this.options.fetchOnDemand;
     }
@@ -100,8 +96,10 @@ export class AngularPimgComponent implements OnChanges {
     if (this.isUndefined(this.className)) {
       this.className = this.options.className;
     }
+    console.log('datasaver', this.dataSaver, this.options.dataSaver);
     if (this.isObject(this.dataSaver)) {
       // set buttonClassName and wrapperClassName
+      this.dataSaver = true;
       this.buttonClassName = this.dataSaver.buttonClassName;
       this.wrapperClassName = this.dataSaver.wrapperClassName;
     } else {
@@ -118,7 +116,6 @@ export class AngularPimgComponent implements OnChanges {
       this.setFetchOnDemand();
     } else {
       this.fetchImage();
-      console.log('Fetching image, due to config', this.dataSaver);
     }
     if (this.src && this.src.includes('cloudinary')) {
       this.placeholder =
