@@ -1,5 +1,4 @@
 import { Injectable, Optional, Inject } from '@angular/core';
-import { AngularWaitBarrier } from 'blocking-proxy/built/lib/angular_wait_barrier';
 import { AngularPimgOptions } from './config-options';
 
 @Injectable({

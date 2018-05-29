@@ -5,7 +5,7 @@
   </button>
 </div>
 <ng-template #loadingContent>
-  <img *ngIf="loading; else otherContent" [ngClass]="classes" [ngStyle]="style" [src]="placeholder" />
+  <img *ngIf="loading; else otherContent" [ngClass]="placeholderClassName" [ngStyle]="style" [src]="placeholder" />
   <ng-template #otherContent>
     <img [ngStyle]="style" [ngClass]="classes" [src]="blob" />
   </ng-template>
