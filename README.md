@@ -1,27 +1,85 @@
-# AngularPimgLib
+# AngularPimg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+![Angular](https://angular.io/assets/images/logos/angular/angular.png)
+![Pimg](pimg.svg)
 
-## Development server
+Angular Pimg is a progressive image loader component for Angular applications. It was heavily inspired by [PIMG](https://github.com/ooade/pimg) which is available for React, Vue and Preact.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Like [PIMG](https://github.com/ooade/pimg), it comes in-built with support for Cloudinary Images.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+```sh
+npm install angular-pimg
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Usage
+To use the component, import the module into your `app.module.ts` or your preferred module like so:
 
-## Running unit tests
+```ts
+import { NgModule } from 'angular-pmig';
+import { AngularPimg } from 'angular-pimg'; 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+const pimgOptions = {
+  fetchOnDemand: true,
+  className: 'img',
+  dataSaver: { wrapperClassName: 'wrapper', buttonClassName: 'my-btn' }
+}
 
-## Running end-to-end tests
+@NgModule({
+  imports: [
+    AngularPimg.forRoot(pimgOptions)
+  ]
+})
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
 
-## Further help
+## Implementing
+You can then use the component like so:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```html
+<angular-pimg
+[fetchOnDemand]='true'
+[placeholder]='"placeholderurl.com/path/to/placeholder"'
+[src]="images.com/path/to/image"
+>
+</angular-pimg>
+```
+
+## Options
+
+Available Pimg Options
+__NOTE:__  Component options have a higer precedence than global options
+
+### Default Options
+
+
+
+### Default Options
+|Option                     |Description                                            | Type         |Default ( Required )
+----------------------------|-------------------------------------------------------|--------------|---------------
+| `fetchOnDemand`           | allows image to load once it is visible on screen     | boolean      | true
+| `placeholderClassName`    | the class Name for the placeholder image              | string       | pimg__placeholder
+| `dataSaver`               | styles to be added to the image element               | false        \| { wrapperClassName: string, buttonClassName: string }     | false
+| `className`               | the classname to be added to the image element        | string       | -
+
+### Component Options
+|Option                     |Description                                            | Type        |Default ( Required )
+----------------------------|------------------------------------------------------|---------------|---------------
+| `src`                     | image source                                          | string       | - (true)
+| `placeholder`             | image source to preload before real image is fetched  | string       | -*
+| `fetchOnDemand`           | allows image to load once it is visible on screen     | boolean      | -
+| `placeholderClassName`    | the classname for the placeholder image              | boolean      | -
+| `style`                   | styles to be added to the image element               | NgStyles     | -
+| `className`               | the classname to be added to the image element        | string       | -
+| `dataSaver`               | styles to be added to the image element               | false        \| { wrapperClassName: string, buttonClassName: string }     | false
+
+__*__ Placeholder images are automatically generated for cloudinary images
+
+## Contributions and Open Source stuff
+This is an open souce project, feel free to submit isses, and pull requests. Don't forget to star my repo too. Thanks.
+Looking for me on Twittter? I am [@ashinzekene](https://twitter.com/ashinzekene)!
+
+## License
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

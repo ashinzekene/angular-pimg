@@ -1,9 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AngularPimgModule } from './lib/angular-pimg.module';
+import { AngularPimgModule } from 'angular-pimg';
 
 import { AppComponent } from './app.component';
+
+const pimgOptions = {
+  fetchOnDemand: true,
+  className: 'img',
+  dataSaver: { wrapperClassName: 'wrapper', buttonClassName: 'my-btn' }
+};
 
 @NgModule({
   declarations: [
@@ -12,11 +18,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AngularPimgModule.forRoot({
-      fetchOnDemand: true,
-      className: 'img',
-      dataSaver: { wrapperClassName: 'wrapper', buttonClassName: 'my-btn' }
-    })
+    AngularPimgModule.forRoot(pimgOptions)
   ],
   providers: [],
   bootstrap: [AppComponent]
