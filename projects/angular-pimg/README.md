@@ -42,7 +42,7 @@ You can then use the component like so:
 <angular-pimg
 [fetchOnDemand]='true'
 [placeholder]='"placeholderurl.com/path/to/placeholder"'
-[src]="images.com/path/to/image"
+[src]='"images.com/path/to/image"'
 >
 </angular-pimg>
 ```
