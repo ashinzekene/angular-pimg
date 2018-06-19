@@ -26,8 +26,8 @@ export const images = [
     [style]="{ width: '320px'}">
   </angular-pimg>`,
   `<angular-pimg 
-    [src]="http://res.cloudinary.com/ashinzekene/image/upload/c_scale,h_536,q_25,w_1056/v1511573958/frontstack/abuja.jpg"
-    [placeholder]="'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,q_25,w_30/v1511573958/frontstack/abuja.jpg'"
+    [src]="https://res.cloudinary.com/ashinzekene/image/upload/c_scale,h_536,q_25,w_1056/v1511573958/frontstack/abuja.jpg"
+    [placeholder]="'https://res.cloudinary.com/ashinzekene/image/upload/c_scale,q_25,w_30/v1511573958/frontstack/abuja.jpg'"
     [style]="{ width: '400px'}">
   </angular-pimg>`,
   `<angular-pimg 
