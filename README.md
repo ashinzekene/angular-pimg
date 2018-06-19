@@ -4,12 +4,10 @@
 ## [Try out a demo](https://ashinzekene.github.io/angular-pimg)
 
 ![Angular](https://angular.io/assets/images/logos/angular/angular.png)
-![Pimg](pimg.svg)
+![Pimg](https://ooade.gitbooks.io/pimg/logo.svg)
 
-Angular Pimg is a progressive image loader component for Angular applications. It was heavily inspired by [PIMG](https://github.com/ooade/pimg) which is available for React, Vue and Preact.
-
+Angular Pimg is a progressive image loader component for Angular applications. It was heavily inspired by [PIMG](https://github.com/ooade/pimg) which is available for React, Vue and Preact.  
 Like [PIMG](https://github.com/ooade/pimg), it comes in-built with support for Cloudinary Images.
-
 
 ## Installation
 
@@ -52,8 +50,9 @@ You can then use the component like so:
 
 ## Options
 
-Available Pimg Options  
-__NOTE:__  Component options have a higer precedence than global options
+### Available Pimg Options  
+
+__NOTE:__  Component options have a higher precedence than global options
 
 ### Default Options
 |Option                     |Description                                            | Type         |Default ( Required )

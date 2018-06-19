@@ -395,7 +395,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".image-text {\n  padding: 10px;\n  border-radius: 10px;\n  margin: 0 30px;\n  box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.3);\n  background-color: #112243;\n  color: #CCCCCC;\n  word-wrap: break-word;\n  line-height: 1.6;\n  font-family: 'Consolas' ,'Courier New', Courier, monospace\n}"
 
 /***/ }),
 
@@ -406,7 +406,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>angular pimg</h1>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"form-group col-md-7 col-lg-5\">\n      <input type=\"text\" [(ngModel)]=\"srcSha\" class=\"form-control\">\n      <button class=\"btn btn-secondary\" (click)=\"changeSrc()\">Oya Load am</button>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <angular-pimg [src]=\"src\" [style]=\"{ width: '100px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-md-6\">\n      <!-- <code>\n        \"\n          &lt;angular-pimg [src]=\"src\" [style]=\"{ width: '100px'}\">\n          &lt;/angular-pimg&gt;\n        \"\n      </code> -->\n    </div>\n  </div>\n\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <angular-pimg [src]=\"src\" [style]=\"{ width: '300px'}\" [dataSaver]=\"{placeholderClassName:'my-placeholder', buttonClassName:'my-btn-o'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-md-6\">\n      <!-- <code>\n        &lt;angular-pimg\n          [src]=\"src\" \n          [style]=\"{ width: '300px'}\"\n          [dataSaver]=\"{placeholderClassName:'my-placeholder', buttonClassName:'my-btn-o'}\"&gt;\n        &lt;/angular-pimg&gt;\n      </code> -->\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <angular-pimg [src]=\"src\" [fetchOnDemand]='true' [style]=\"{ width: '180px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-md-6\">\n      <!-- <code>\n        &lt;angular-pimg [src]=\"src\" [fetchOnDemand]='true' [style]=\"{ width: '180px'}\"&gt;\n        &lt;/angular-pimg&gt;\n      </code> -->\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <angular-pimg [src]=\"src\" [fetchOnDemand]='true' [style]=\"{ width: '410px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-md-6\">\n      <!-- <code>\n        &lt;angular-pimg [src]=\"src\" [fetchOnDemand]='true' [style]=\"{ width: '410px'}\"&gt;\n        &lt;/angular-pimg&gt;\n      </code> -->\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n\n  <angular-pimg [src]=\"src\" [dataSaver]=\"false\" [fetchOnDemand]=\"true\" [style]=\"{ width: '320px'}\">\n  </angular-pimg>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <angular-pimg [src]=\"'https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60'\"\n    [placeholder]=\"'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,q_25,w_30/v1511573958/frontstack/abuja.jpg'\"\n    [style]=\"{ width: '400px'}\">\n  </angular-pimg>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <angular-pimg [src]=\"src\" [fetchOnDemand]=\"true\" [style]=\"{ width: '350px'}\">\n  </angular-pimg>\n</div>"
+module.exports = "<div class=\"header mb-3 px-3 py-5 bg-primary\">\n  <h1 class=\"my-5 text-center text-white\">Angular Pimg</h1>\n</div>\n<div class=\"container\">\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src2\" [style]=\"{ width: '300px'}\" [dataSaver]=\"{placeholderClassName:'my-placeholder', buttonClassName:'my-btn-o'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[0] }}</div>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src2\" [fetchOnDemand]='true' [style]=\"{ width: '180px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[1] }}</div>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src2\" [fetchOnDemand]='true' [style]=\"{ width: '180px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[2] }}</div>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src2\" [fetchOnDemand]='true' [style]=\"{ width: '410px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[3] }}</div>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src2\" [dataSaver]=\"false\" [fetchOnDemand]=\"true\" [style]=\"{ width: '320px'}\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[4] }}</div>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src1\" [placeholder]=\"'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,q_25,w_30/v1511573958/frontstack/abuja.jpg'\"\n        [style]=\"{ width: '400px'}\">\n      </angular-pimg>`\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[5] }}</div>\n    </div>\n  </div>\n\n  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam a, facere sed, repudiandae maiores ea eligendi\n    praesentium totam nesciunt perspiciatis alias aliquam necessitatibus sunt error eum hic cumque officiis? Maxime quis\n    perspiciatis perferendis eius accusamus error omnis atque doloribus, ullam est tenetur. Ullam excepturi tempora molestias\n    quos consectetur aperiam fugit quas earum ipsa, laudantium iste omnis nisi provident illum! Esse, accusantium eos temporibus\n    corporis adipisci ut tenetur at harum cupiditate commodi nemo cumque fuga vero odit quas eius sint nesciunt nobis, minima\n    architecto labore optio eveniet atque! Id, sed! Officiis vitae expedita, velit qui assumenda rem voluptate deleniti voluptatem\n    saepe ex? Tenetur omnis, ducimus beatae, consequuntur ad similique aut, optio unde inventore sequi eius iure nemo cupiditate\n    vero dignissimos. Suscipit laborum placeat id reprehenderit quis! Nam possimus iure porro placeat ea, quia blanditiis\n    explicabo qui ad expedita laudantium deleniti ipsum! Autem ut mollitia saepe doloribus esse sunt facere consequatur.</div>\n  <div class=\"row my-3\">\n    <div class=\"col-6\">\n      <angular-pimg [src]=\"src2\" [fetchOnDemand]=\"true\" [style]=\"{ width: '350px'}\" [dataSaver]=\"false\">\n      </angular-pimg>\n    </div>\n    <div class=\"col-6\">\n      <div class=\"image-text\">{{ images[6] }}</div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -421,6 +421,7 @@ module.exports = "<h1>angular pimg</h1>\n<div class=\"container\">\n  <div class
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _images__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images */ "./src/app/images.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -428,15 +429,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
-        this.srcSha = '';
-        this.src = 'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,h_536,q_25,w_1056/v1511573958/frontstack/abuja.jpg';
+        this.images = _images__WEBPACK_IMPORTED_MODULE_1__["images"];
+        // tslint:disable-next-line:max-line-length
+        this.src1 = 'https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60';
+        this.src2 = 'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,h_536,q_25,w_1056/v1511573958/frontstack/abuja.jpg';
     }
-    AppComponent.prototype.changeSrc = function () {
-        this.src = this.srcSha;
-    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
@@ -466,12 +467,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var angular_pimg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-pimg */ "./dist/angular-pimg/fesm5/angular-pimg.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _escaped_html_escaped_html_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./escaped-html/escaped-html.component */ "./src/app/escaped-html/escaped-html.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -487,7 +490,8 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _escaped_html_escaped_html_component__WEBPACK_IMPORTED_MODULE_5__["EscapedHtmlComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -501,6 +505,113 @@ var AppModule = /** @class */ (function () {
     return AppModule;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/escaped-html/escaped-html.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/escaped-html/escaped-html.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/escaped-html/escaped-html.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/escaped-html/escaped-html.component.html ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-content></ng-content>"
+
+/***/ }),
+
+/***/ "./src/app/escaped-html/escaped-html.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/escaped-html/escaped-html.component.ts ***!
+  \********************************************************/
+/*! exports provided: EscapedHtmlComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EscapedHtmlComponent", function() { return EscapedHtmlComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EscapedHtmlComponent = /** @class */ (function () {
+    function EscapedHtmlComponent(el, renderer) {
+        this.el = el;
+        this.renderer = renderer;
+        this.bgColor = 'rgb(1, 10, 42)';
+        this.color = '#ccc';
+    }
+    EscapedHtmlComponent.prototype.ngOnInit = function () {
+        this.el.nativeElement.style.backgroundColor = this.bgColor;
+        this.el.nativeElement.style.color = this.color;
+        this.el.nativeElement.style.padding = '20px';
+        this.el.nativeElement.style.borderRadius = '10px';
+    };
+    EscapedHtmlComponent.prototype.ngAfterViewInit = function () {
+        var input = this.el.nativeElement.innerHTML;
+        this.el.nativeElement.textContent = input.replace(/\s_ngcontent-c0=""/g, '');
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], EscapedHtmlComponent.prototype, "bgColor", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], EscapedHtmlComponent.prototype, "color", void 0);
+    EscapedHtmlComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-escaped-html',
+            template: __webpack_require__(/*! ./escaped-html.component.html */ "./src/app/escaped-html/escaped-html.component.html"),
+            styles: [__webpack_require__(/*! ./escaped-html.component.css */ "./src/app/escaped-html/escaped-html.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], EscapedHtmlComponent);
+    return EscapedHtmlComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/images.ts":
+/*!***************************!*\
+  !*** ./src/app/images.ts ***!
+  \***************************/
+/*! exports provided: images */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "images", function() { return images; });
+// tslint:disable
+var images = [
+    "<angular-pimg \n    [src]=\"https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60\" \n    [style]=\"{ width: '300px'}\" \n    [dataSaver]=\"{placeholderClassName:'my-placeholder', buttonClassName:'my-btn-o'}\">\n  </angular-pimg>",
+    "<angular-pimg \n    [src]=\"https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60\"\n    [fetchOnDemand]='true'\n    [style]=\"{ width: '180px'}\">\n  </angular-pimg>",
+    "<angular-pimg \n    [src]=\"https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60\"\n    [fetchOnDemand]='true'\n    [style]=\"{ width: '180px'}\">\n  </angular-pimg>",
+    "<angular-pimg \n    [src]=\"https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60\"\n    [fetchOnDemand]='true'\n    [style]=\"{ width: '410px'}\">\n  </angular-pimg>",
+    "<angular-pimg \n    [src]=\"https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60\" [dataSaver]=\"false\"\n    [fetchOnDemand]=\"true\"\n    [style]=\"{ width: '320px'}\">\n  </angular-pimg>",
+    "<angular-pimg \n    [src]=\"http://res.cloudinary.com/ashinzekene/image/upload/c_scale,h_536,q_25,w_1056/v1511573958/frontstack/abuja.jpg\"\n    [placeholder]=\"'http://res.cloudinary.com/ashinzekene/image/upload/c_scale,q_25,w_30/v1511573958/frontstack/abuja.jpg'\"\n    [style]=\"{ width: '400px'}\">\n  </angular-pimg>",
+    "<angular-pimg \n    [src]=\"https://images.unsplash.com/photo-1514041790697-53f1f86214d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7ac79503fbe78855a346c8d814f95ba&auto=format&fit=crop&w=500&q=60\"\n    [fetchOnDemand]=\"true\"\n    [dataSaver]=\"false\"\n    [style]=\"{ width: '350px'}\">\n  </angular-pimg>"
+];
 
 
 /***/ }),

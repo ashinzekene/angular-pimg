@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AngularPimgModule } from 'angular-pimg';
 
 import { AppComponent } from './app.component';
+import { EscapedHtmlComponent } from './escaped-html/escaped-html.component';
 
 const pimgOptions = {
   className: 'img',
@@ -12,7 +13,8 @@ const pimgOptions = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EscapedHtmlComponent,
   ],
   imports: [
     BrowserModule,
