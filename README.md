@@ -52,12 +52,8 @@ You can then use the component like so:
 
 ## Options
 
-Available Pimg Options
+Available Pimg Options  
 __NOTE:__  Component options have a higer precedence than global options
-
-### Default Options
-
-
 
 ### Default Options
 |Option                     |Description                                            | Type         |Default ( Required )
