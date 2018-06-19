@@ -1,5 +1,8 @@
 # AngularPimg
 
+
+## [Try out a demo](https://ashinzekene.github.io/angular-pimg)
+
 ![Angular](https://angular.io/assets/images/logos/angular/angular.png)
 ![Pimg](pimg.svg)
 
